@@ -2,6 +2,7 @@ import Ember from 'ember';
 import Resolver from 'ember/resolver';
 import loadInitializers from 'ember/load-initializers';
 import config from './config/environment';
+import protoype from './prototype';
 
 let App;
 
@@ -14,5 +15,5 @@ App = Ember.Application.extend({
 });
 
 loadInitializers(App, config.modulePrefix);
-
+protoype();
 export default App;
