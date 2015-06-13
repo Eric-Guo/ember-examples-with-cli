@@ -1,0 +1,9 @@
+{{#if edit}}
+    <ul>
+        {{#each model as |item|}}
+          <li>{{item}}</li>
+        {{/each}}
+    </ul>
+ {{/if}}
+
+<button {{action 'changeEdit'}}>Toggle</button>
