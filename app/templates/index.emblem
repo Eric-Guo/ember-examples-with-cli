@@ -1,0 +1,5 @@
+h3 From Index Template
+
+ul
+  each model as |item|
+    li = item
