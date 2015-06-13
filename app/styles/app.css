@@ -22,3 +22,18 @@ table#t01 th  {
   background-color: black;
   color: white;
 }
+.red {
+  color: red;
+}
+.blue {
+  color: blue
+}
+.alert {
+  background-color:red;
+  color: white;
+  text-align: center;
+}
+
+.hide {
+  display: none
+}

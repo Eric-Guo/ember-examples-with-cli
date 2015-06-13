@@ -1,4 +1,4 @@
- <table id="t01">
+<table id="t01">
       <tr>
         <th>Company Name</th>
         <th>Headquaters</th>
@@ -6,9 +6,9 @@
       </tr>
       {{#each model as |item|}}
         <tr>
-          <td>{{item.name}}</td>
-          <td>{{item.headquaters}}</td>
-          <td>{{item.revenue}}</td>
+          <td {{action "alert" "alert form company name" }}>{{item.name}}</td>
+          <td {{action "alert" "alert form company headquaters" }}>{{item.headquaters}}</td>
+          <td {{action "alert" "alert form revenue" }}>{{item.revenue}}</td>
         </tr>
       {{/each}}
 </table>
