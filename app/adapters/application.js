@@ -1,3 +1,3 @@
-import DS from 'ember-data';
+import DSFA from 'ember-data-fixture-adapter';
 
-export default DS.FixtureAdapter.extend({});
+export default DSFA.extend({});
