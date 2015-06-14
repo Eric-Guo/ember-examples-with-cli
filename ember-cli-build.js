@@ -18,6 +18,19 @@ module.exports = function(defaults) {
   // modules that you would like to import into your application
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
+  app.import('bower_components/bootstrap/dist/css/bootstrap.css');
+  app.import('bower_components/bootstrap/dist/css/bootstrap.css.map', { destDir: 'assets' });
+  app.import('bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.eot', { destDir: 'fonts' });
+  app.import('bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf', { destDir: 'fonts' });
+  app.import('bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.svg', { destDir: 'fonts' });
+  app.import('bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff', { destDir: 'fonts' });
+  app.import('bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2', { destDir: 'fonts' });
+  app.import('bower_components/bootstrap/dist/js/bootstrap.js');
+  app.import('bower_components/moment/moment.js');
+  app.import('bower_components/showdown/dist/showdown.js');
+  app.import('bower_components/showdown/dist/showdown.js.map');
+  app.import('bower_components/showdown-github/dist/showdown-github.js');
+  app.import('bower_components/showdown-github/dist/showdown-github.js.map');
 
   return app.toTree();
 };

@@ -1,0 +1,25 @@
+<div class="container-fluid">
+	<div class="row">
+
+		<!-- blog post listing -->
+		<div class="col-xs-3">
+			<table class='table'>
+				<thead>
+					<tr><th>Recent Posts</th></tr>
+				</thead>
+				{{#each model key="title" as |post|}}
+				<tr><td>
+					{{#link-to 'post' post}}
+						{{post.title}} <small class='muted'>by {{post.author}}</small>
+					{{/link-to}}
+				</td></tr>
+				{{/each}}
+			</table>
+		</div>
+
+		<!-- blog post content -->
+		<div class="col-xs-9">
+			{{outlet}}
+		</div>
+	</div>
+</div>
