@@ -6,7 +6,9 @@ So this repository just combine all the smaller Ember.js example into one and wh
 
 All ch* example is just copy from Suchit Puri's [Ember.js Web Development with Ember CLI book](https://www.packtpub.com/web-development/emberjs-web-development-ember-cli) and that's why we need GPL v3 license.
 
-Todo-mvc example is copy from [brownie3003](https://github.com/brownie3003/ember-cli-todo-mvc) with little improvement.
+Todo-mvc example is copy from [brownie3003](https://github.com/brownie3003/ember-cli-todo-mvc).
+
+Tom Dale's blog example is copy from [balupton](https://github.com/balupton/ember-cli-blog).
 
 ## Contributing
 
