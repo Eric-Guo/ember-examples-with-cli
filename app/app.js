@@ -23,9 +23,9 @@ var myUser = user.create({
 
 console.log(myUser.get('fullName')); //suchit puri
 
-user.set("firstName","Tony");
-user.set("lastName","Stark");
-console.log(user.get('fullName'));//Tony Stark
+myUser.set("firstName","Tony");
+myUser.set("lastName","Stark");
+console.log(myUser.get('fullName'));//Tony Stark
 
 
 export default App;
