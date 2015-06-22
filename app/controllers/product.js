@@ -1,16 +1,16 @@
 import Ember from "ember";
 
-export default Ember.ObjectController.extend({
+export default Ember.Controller.extend({
     formattedPrice: function(){
-        return this.get('symbol') + "   " + Ember.$.number(this.get('price'),2);
-    }.property('symbol','price'),
+        return this.get('model.symbol') + "   " + Ember.$.number(this.get('model.price'),2);
+    }.property('model.symbol','model.price'),
 
     formattedDimension: function(){
-        return this.get('dimensions.width') + " x "  + this.get('dimensions.height') + " x " + this.get('dimensions.length');
-    }.property('dimensions.width','dimensions.height','dimensions.length'),
+        return this.get('model.dimensions.width') + " x "  + this.get('model.dimensions.height') + " x " + this.get('model.dimensions.length');
+    }.property('model.dimensions.width','model.dimensions.height','model.dimensions.length'),
 
     shortDescription: function(){
-        var shortDesc = this.get('description').substring(0, 25);
+        var shortDesc = this.get('model.description').substring(0, 25);
         return shortDesc + "...";
-    }.property('description')
+    }.property('model.description')
 });
