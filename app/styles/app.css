@@ -22,3 +22,9 @@ table#t01 th  {
   background-color: black;
   color: white;
 }
+.red {
+  color: red;
+}
+.blue {
+  color: blue
+}

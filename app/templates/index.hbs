@@ -6,9 +6,11 @@
       </tr>
       {{#each model as |item|}}
         <tr>
-          <td>{{item.name}}</td>
-          <td>{{item.headquaters}}</td>
+          <td class="{{unbound item.name}}">{{item.name}}</td>
+          <td {{bind-attr class="className"}}>{{item.headquaters}}</td>
           <td>{{item.revenue}}</td>
         </tr>
       {{/each}}
 </table>
+
+<button {{action "toggleColor"}}> Change color </button>
