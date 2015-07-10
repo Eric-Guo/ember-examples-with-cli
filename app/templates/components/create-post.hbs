@@ -1,0 +1,30 @@
+<p>
+  <button {{action 'toggleOpen'}}>New post</button>
+</p>
+
+{{#if isOpen}}
+  <form class="Form" {{action 'save' on='submit'}}>
+    <div class="Form-group">
+      <label>title:
+        {{input value=post.title required="required"}}
+      </label>
+    </div>
+    <div class="Form-group">
+      <label>url:
+        {{input value=post.url type="url"}}
+      </label>
+    </div>
+     <div class="Form-group">
+      <label>description:
+        {{textarea value=post.description}}
+      </label>
+    </div>
+    <button class="Button" type="submit" disabled={{isSaving}}>
+        {{#if isSaving}}
+          Submitting…
+        {{else}}
+          Submit
+        {{/if}}
+     </button>
+  </form>
+{{/if}}

@@ -1,0 +1,35 @@
+<p>You have to be logged in to submit.</p>
+
+<h2>Login</h2>
+
+<form class="Form">
+  <div class="Form-group">
+    <label>username:
+      {{input value=loginUsername autocorrect="off" autocapitalize="off"}}
+    </label>
+  </div>
+  <div class="Form-group">
+    <label>password:
+      {{input value=loginPassword type="password"}}
+    </label>
+  </div>
+  <button class="Button" type="submit">login</button>
+</form>
+
+<p><a href="#">Forgot your password?</a></p>
+
+<h2>Create Account</h2>
+
+<form class="Form">
+  <div class="Form-group">
+    <label>username:
+      {{input value=registerUsername autocorrect="off" autocapitalize="off"}}
+    </label>
+  </div>
+  <div class="Form-group">
+    <label>password:
+      {{input value=registerPassword type="password"}}
+    </label>
+  </div>
+  <button class="Button" type="submit">create account</button>
+</form>

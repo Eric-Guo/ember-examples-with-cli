@@ -13,6 +13,11 @@ App = Ember.Application.extend({
   Resolver: Resolver
 });
 
+// Change the class Ember adds to active elements
+Ember.LinkComponent.reopen({
+  activeClass: 'is-active'
+});
+
 loadInitializers(App, config.modulePrefix);
 
 export default App;

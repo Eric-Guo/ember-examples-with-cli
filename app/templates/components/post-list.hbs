@@ -1,0 +1,20 @@
+<h3>
+  {{#if post.url}}
+
+    <a href="{{post.url}}">
+      &rarr; {{post.title}}
+      <small>({{post.url}})</small>
+    </a>
+
+  {{else}}
+
+    {{#link-to 'post' post}}
+      {{post.title}}
+    {{/link-to}}
+
+  {{/if}}
+</h3>
+
+<footer class="Meta">
+  {{post.points}} points and {{#link-to 'post' post}}{{post.comments.length}} comments{{/link-to}} • {{ago post.created}}
+</footer>
