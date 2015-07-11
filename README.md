@@ -1,4 +1,6 @@
 # Ember Examples with CLI
+[![Travis CI tests](https://travis-ci.org/Eric-Guo/ember-examples-with-cli.png)](https://travis-ci.org/Eric-Guo/ember-examples-with-cli)
+
 
 Ember web app with CLI usually need quite a lot of hard drive and time to running `npm install && bower install` before you can acturally running small example, so if you just want to do some quickly testing based on some example, it takes long time.
 
