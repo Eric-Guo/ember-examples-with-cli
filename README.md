@@ -2,13 +2,19 @@
 
 Ember web app with CLI usually need quite a lot of hard drive and time to running `npm install && bower install` before you can acturally running small example, so if you just want to do some quickly testing based on some example, it takes long time.
 
-So this repository just combine all the smaller Ember.js example into one and what you need to try is just switch between branch by running `git checkout ch3-example1 && ember s`.
+So this repository just combine all the smaller Ember.js example into one and what you need is just switch between branch by running `git checkout ch3-example1 && ember s`.
 
-All ch* example is just copy from Suchit Puri's [Ember.js Web Development with Ember CLI book](https://www.packtpub.com/web-development/emberjs-web-development-ember-cli) and that's why we need GPL v3 license.
+All ch* example just copy from Suchit Puri's [Ember.js Web Development with Ember CLI book](https://www.packtpub.com/web-development/emberjs-web-development-ember-cli) and that's why we need GPL v3 license.
 
-Todo-mvc example is copy from [brownie3003](https://github.com/brownie3003/ember-cli-todo-mvc).
+Todo-mvc example copy from [brownie3003](https://github.com/brownie3003/ember-cli-todo-mvc).
 
-Tom Dale's blog example is copy from [balupton](https://github.com/balupton/ember-cli-blog).
+Tom Dale's blog example copy from [balupton](https://github.com/balupton/ember-cli-blog).
+
+Ember News example copy from [oskarrough](https://github.com/oskarrough/ember-news).
+
+# Tips for Windows Developer
+
+Rember always open the terminal with [admin privileges](http://www.ember-cli.com/#windows) and install & use [ember-cli-windows-addon](https://github.com/felixrieseberg/ember-cli-windows)
 
 ## Contributing
 
