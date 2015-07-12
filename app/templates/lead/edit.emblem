@@ -1,0 +1,25 @@
+article#lead
+  h1
+    model.fullName
+
+  form
+    fieldset
+      dl
+        dt: label First Name:
+        dd: = input value=model.firstName
+
+      dl
+        dt: label Last Name:
+        dd: = input value=model.lastName
+
+      dl
+        dt: label Email:
+        dd: = input value=model.email
+
+      dl
+        dt: label Phone:
+        dd: = input value=model.phone
+
+    fieldset.actions
+      input type='submit' value='Save Changes' click="saveChanges"
+      a.cancel href="#" click="cancel" cancel
