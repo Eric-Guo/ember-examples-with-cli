@@ -1,2 +1,7 @@
-import DSFA from 'ember-data-fixture-adapter';
-export default DSFA.extend({});
+import LFAdapter from 'ember-localforage-adapter/adapters/localforage';
+
+export default LFAdapter.extend({
+  namespace: 'tom-dale-blog',
+  shouldReloadAll() { return true; }
+});
+
