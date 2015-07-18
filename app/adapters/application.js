@@ -1,7 +1,6 @@
-import LFAdapter from 'ember-localforage-adapter/adapters/localforage';
+import DS from 'ember-data';
 
-export default LFAdapter.extend({
-  namespace: 'tom-dale-blog',
+export default DS.ActiveModelAdapter.extend({
   shouldReloadAll() { return true; }
 });
 

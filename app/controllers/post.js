@@ -10,7 +10,10 @@ export default Ember.Controller.extend({
 
   	doneEditing: function() {
   		this.set('isEditing', false);
-  		// this.store.commit();
+      var self = this;
+      this.get('model').save().then(function() {
+        self.transitionToRoute('post');
+      });
   	}
   }
 });
