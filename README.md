@@ -14,6 +14,8 @@ Tom Dale's blog example copy from [balupton](https://github.com/balupton/ember-c
 
 Ember News example copy from [oskarrough](https://github.com/oskarrough/ember-news).
 
+Ember CRM is from Vic Ramon's [Ember Tutorial](http://ember.vicramon.com/), [Original](https://github.com/Eric-Guo/ember-crm-js) code is based on ember-rails gems, but now only [backend on Rails API](https://github.com/Eric-Guo/ember-crm-backend).
+
 # Tips for Windows Developer
 
 Rember always open the terminal with [admin privileges](http://www.ember-cli.com/#windows) and install & use [ember-cli-windows-addon](https://github.com/felixrieseberg/ember-cli-windows)
