@@ -29,6 +29,10 @@ export default Ember.Component.extend({
       this.sendAction('saveAction');
     },
 
+    cancelEditing: function() {
+      this.set('isEditing', false);
+    },
+
     deletePost: function() {
       this.sendAction('deleteAction');
     }

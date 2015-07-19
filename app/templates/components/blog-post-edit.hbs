@@ -1,5 +1,5 @@
 {{#if isEditing}}
-	<p><button {{action 'doneEditing'}}>Done</button></p>
+	<p><button {{action 'doneEditing'}}>Done</button> <button {{action 'cancelEditing'}}>Cancel</button></p>
 	<p>{{input type="text" value=post.title class="form-control"}}</p>
 	<p>{{ember-selectize content=authorlist selection=post.author}}</p>
   <p>{{input type="text" value=post.excerpt class="form-control"}}</p>
