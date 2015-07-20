@@ -16,7 +16,7 @@ Ember News example copy from [oskarrough](https://github.com/oskarrough/ember-ne
 
 Ember CRM is from Vic Ramon's [Ember Tutorial](http://ember.vicramon.com/), [Original](https://github.com/Eric-Guo/ember-crm-js) code is based on ember-rails gems, but now only [backend on Rails API](https://github.com/Eric-Guo/ember-crm-backend).
 
-wge-examples is from Mike North [speach](http://confreaks.tv/videos/wickedgoodember2015-compose-all-the-things) [origina repository](from https://github.com/truenorth/wge-examples), [PPT](http://www.slideshare.net/mikelnorth/compose-all-the-things) also available.
+wge-examples is from Mike North [speach](http://confreaks.tv/videos/wickedgoodember2015-compose-all-the-things) [original repository](https://github.com/truenorth/wge-examples), [PPT](http://www.slideshare.net/mikelnorth/compose-all-the-things) also available.
 
 # Tips for Windows Developer
 
