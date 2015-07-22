@@ -10,6 +10,9 @@
     "ember-qunit-notifications": "0.0.7",
     "jquery": "^1.11.3",
     "loader.js": "ember-cli/loader.js#3.3.0",
-    "qunit": "~1.18.0"
+    "qunit": "~1.18.0",
+    "picnic": "~4.1.1",
+    "moment": "~2.10.3",
+    "borrowers-dates": "~0.0.1"
   }
 }
