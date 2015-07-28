@@ -4,6 +4,14 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'ember-web-with-cli',
     environment: environment,
+    contentSecurityPolicy: {
+      'connect-src': "'self' wss://*.firebaseio.com",
+      'default-src': "'none'",
+      'script-src': "'self'",
+      'font-src': "'self' http://fonts.gstatic.com",
+      'img-src': "'self'",
+      'media-src': "'self'"
+    },
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {

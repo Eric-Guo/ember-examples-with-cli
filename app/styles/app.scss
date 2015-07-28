@@ -1,0 +1,42 @@
+ @import 'ember-paper';
+
+ .new-article a {
+    margin-left: 20px;
+ }
+
+ .article-link {
+    color: #FB8C00;
+ }
+
+ .new-article-form, .new-user-form {
+    padding: 15px 25px 10px 25px;
+ }
+
+.upvote {
+    cursor: pointer;
+}
+
+ .new-user-form input {
+    width: 220px;
+ }
+
+ .create-account, .logged-in {
+    margin-left: 30px;
+ }
+
+ .vote-count {
+    color: #00C853;
+ }
+
+ .not-logged-in {
+    margin: 30px;
+    background-color: #FFE0B2;
+    display: inline-block;
+    padding: 9px;
+    border-radius: 7px;
+ }
+
+ .not-logged-in a {
+    color: #4CAF50;
+    text-decoration: none;
+ }

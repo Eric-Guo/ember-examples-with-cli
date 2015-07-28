@@ -1,0 +1,12 @@
+{{#if session.user}}
+<div class="new-article-form">
+<p>Add a new article:</p>
+    {{paper-text label="Title" value=title}}
+    {{paper-text label="URL" value=url}}
+    {{#paper-button classNames="md-primary" raised=true action="addArticle"}}Submit{{/paper-button}}
+<br/><br/>
+</div>
+{{paper-divider}}
+{{else}}
+    <div class="not-logged-in">You must have an account to post an article. {{#link-to 'users.new'}}Sign up now{{/link-to}}.</div>
+{{/if}}

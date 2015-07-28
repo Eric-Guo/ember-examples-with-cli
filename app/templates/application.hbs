@@ -1,3 +1,17 @@
-<h2 id="title">Welcome to Ember</h2>
+{{#paper-toolbar}}
+    <div class="md-toolbar-tools">
+        <p>{{#link-to 'articles'}}All Articles{{/link-to}}</p>
+        <div class="new-article">
+            {{#link-to 'articles.new' class="new-article"}}{{paper-button raised=true label="New Article"}}{{/link-to}}
+        </div>
+            {{#if session.user}}
+               <div class="logged-in"> Logged in as {{session.user.email}}</div>
+            {{else}}
+        <div class="create-account">
+            {{#link-to 'users.new'}}{{paper-button raised=true label="Create Account"}}{{/link-to}}
+        </div>
+        {{/if}}
+    </div>
+{{/paper-toolbar}}
 
 {{outlet}}
