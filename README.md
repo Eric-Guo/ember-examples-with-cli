@@ -18,6 +18,8 @@ Ember CRM is from Vic Ramon's [Ember Tutorial](http://ember.vicramon.com/), [Ori
 
 wge-examples is from Mike North [speach](http://confreaks.tv/videos/wickedgoodember2015-compose-all-the-things) [original repository](https://github.com/truenorth/wge-examples), [PPT](http://www.slideshare.net/mikelnorth/compose-all-the-things) also available.
 
+Hacker-News example is from [sararob](https://github.com/sararob/emberfire-hn), but [backend on Rails API](https://github.com/Eric-Guo/ember-hacker-news-backend) instead of Firebase.
+
 # Tips for Windows Developer
 
 Rember always open the terminal with [admin privileges](http://www.ember-cli.com/#windows) and install & use [ember-cli-windows-addon](https://github.com/felixrieseberg/ember-cli-windows)
