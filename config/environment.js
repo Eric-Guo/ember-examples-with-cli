@@ -3,6 +3,9 @@
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'ember-web-with-cli',
+    contentSecurityPolicy: {
+      'style-src': "'self' 'unsafe-inline'"
+    },
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
