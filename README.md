@@ -20,6 +20,10 @@ wge-examples is from Mike North [speach](http://confreaks.tv/videos/wickedgoodem
 
 Hacker-News example is from [sararob](https://github.com/sararob/emberfire-hn), but [backend on Rails API](https://github.com/Eric-Guo/ember-hacker-news-backend) instead of Firebase.
 
+Book store example is from [frank06](https://github.com/frank06/bookstore-client), [Building a modern bridge between Ember and Rails 5 with JSON API](http://emberigniter.com/modern-bridge-ember-and-rails-5-with-json-api/)
+
+Timesheet example is using [ember-cli-simple-auth-devise](https://npmjs.org/package/ember-cli-simple-auth-devise), following [adibsaad article](https://adibsaad.com/blog/setting-up-ember-cli-with-a-rails-back-end-and-token-authentication-authorization), following writen by [Eric-Guo](https://github.com/Eric-Guo)
+
 # Tips for Windows Developer
 
 Rember always open the terminal with [admin privileges](http://www.ember-cli.com/#windows) and install & use [ember-cli-windows-addon](https://github.com/felixrieseberg/ember-cli-windows)

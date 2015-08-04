@@ -1,8 +1,8 @@
 {
   "name": "ember-web-with-cli",
   "version": "0.0.0",
-  "description": "Small description for ember-web-with-cli goes here",
-  "private": true,
+  "description": "All Ember.js examples in one repos, switch branchs to run instead of time consuming npm install",
+  "private": false,
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -12,7 +12,7 @@
     "build": "ember build",
     "test": "ember test"
   },
-  "repository": "",
+  "repository": "https://github.com/Eric-Guo/ember-examples-with-cli",
   "engines": {
     "node": ">= 0.10.0"
   },
