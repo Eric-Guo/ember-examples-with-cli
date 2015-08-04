@@ -12,15 +12,14 @@ module.exports = function(environment) {
         // e.g. 'with-controller': true
       }
     },
-
+    'simple-auth-devise': {
+      resourceName: 'user',
+      identificationAttributeName: 'email'
+    },
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
     }
-  };
-
-  ENV['simple-auth-devise'] = {
-    resourceName: 'user'
   };
 
   if (environment === 'development') {
