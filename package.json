@@ -32,6 +32,8 @@
     "ember-cli-qunit": "^1.0.4",
     "ember-cli-release": "0.2.8",
     "ember-cli-sri": "^1.2.0",
+    "ember-cli-simple-auth": "0.8.0",
+    "ember-cli-simple-auth-devise": "0.8.0",
     "ember-cli-uglify": "^1.2.0",
     "ember-data": "1.13.15",
     "ember-disable-proxy-controllers": "^1.0.1",

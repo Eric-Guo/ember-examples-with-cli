@@ -19,6 +19,10 @@ module.exports = function(environment) {
     }
   };
 
+  ENV['simple-auth-devise'] = {
+    resourceName: 'user'
+  };
+
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
