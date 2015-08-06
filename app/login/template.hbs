@@ -1,9 +1,11 @@
-<form id="login" {{action 'authenticate' on='submit'}}>
-    <label for="identification">Login</label>
-    {{input id='identification' placeholder='Enter Login'
-            value=identification}}
-    <label for="password">Password</label>
-    {{input id='password' placeholder='Enter Password'
-            type='password' value=password}}
-    <button id="submit" type="submit">Login</button>
+<div class="row">
+<form id="login" {{action 'authenticate' on='submit'}} class="col s6">
+  <div class="row">
+    {{md-input value=identification label='Login' placeholder='Enter Login'}}
+  </div>
+  <div class="row">
+    {{md-input value=password label='Password' type="password" placeholder='Enter Password'}}
+  </div>
+  {{md-btn-submit icon='mdi-content-send' iconPosition='right' text='Login'}}
 </form>
+</div>
