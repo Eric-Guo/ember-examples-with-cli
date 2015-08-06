@@ -1,16 +1,15 @@
-<h2 id="title">Welcome to Ember</h2>
-
-{{#link-to 'index'}}Home{{/link-to}}
-{{#link-to 'protected'}}Protected{{/link-to}}
-
-{{#if session.isAuthenticated}}
-    <button {{ action 'invalidateSession' }}>Logout</button>
-{{else}}
-    {{#link-to 'login'}}Login{{/link-to}}
-{{/if}}
-
-<hr>
 {{!-- ember-cli-materialize modal container --}}
 {{md-modal-container}}
-
+{{#md-navbar name='MES Time Sheets' class='brand-logo' homeRoute='index'}}
+  {{#link-to 'protected' tagName='li'}}
+    {{link-to 'Protected' 'protected'}}
+  {{/link-to}}
+{{#if session.isAuthenticated}}
+  {{md-btn text='Logout' action='invalidateSession' class="btn"}}
+{{else}}
+  {{#link-to 'login' tagName='li'}}
+    {{link-to 'Login' 'login' class="btn"}}
+  {{/link-to}}
+{{/if}}
+{{/md-navbar}}
 {{outlet}}
