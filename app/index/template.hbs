@@ -1,22 +1,7 @@
-<table>
-  <thead>
-    <tr>
-      <th>Work Item</th>
-      <th>Start</th>
-      <th>End</th>
-      <th>Ticket Number</th>
-      <th>Category</th>
-    </tr>
-  </thead>
-  <tbody>
-    {{#each model as |item|}}
-    <tr>
-      <td>{{item.workitem}}</td>
-      <td>{{item.start}}</td>
-      <td>{{item.end}}</td>
-      <td>{{item.ticketnumber}}</td>
-      <td>{{item.category}}</td>
-    </tr>
-    {{/each}}
-  </tbody>
-</table>
+{{#md-table content=model class='bordered' as |item|}}
+  {{md-table-col row=item valueBindingPath='workitem' header='Work Item'}}
+  {{md-table-col row=item valueBindingPath='start' header='Start at'}}
+  {{md-table-col row=item valueBindingPath='end' header='Finish at'}}
+  {{md-table-col row=item valueBindingPath='ticketnumber' header='Ticket#'}}
+  {{md-table-col row=item valueBindingPath='category' header='Belong category'}}
+{{/md-table}}
