@@ -5,7 +5,7 @@
     {{link-to 'Protected' 'protected'}}
   {{/link-to}}
 {{#if session.isAuthenticated}}
-  {{md-btn text='Logout' action='invalidateSession' class="btn"}}
+  {{md-btn text=session.content.secure.email action='invalidateSession' class="btn"}}
 {{else}}
   {{#link-to 'login' tagName='li'}}
     {{link-to 'Login' 'login' class="btn"}}
