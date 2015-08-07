@@ -1,1 +1,22 @@
-landing page
+<table>
+  <thead>
+    <tr>
+      <th>Work Item</th>
+      <th>Start</th>
+      <th>End</th>
+      <th>Ticket Number</th>
+      <th>Category</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each model as |item|}}
+    <tr>
+      <td>{{item.workitem}}</td>
+      <td>{{item.start}}</td>
+      <td>{{item.end}}</td>
+      <td>{{item.ticketnumber}}</td>
+      <td>{{item.category}}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
