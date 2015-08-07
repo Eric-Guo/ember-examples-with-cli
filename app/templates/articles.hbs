@@ -3,8 +3,8 @@
 {{outlet}}
     {{#paper-list}}
         {{#each model as |article|}}
-            {{#paper-item}}
-                {{#paper-tile-left}}
+            {{#paper-item class="md-4-line"}}
+              <div class="md-list-item-text">
                     <span  class="upvote"{{action 'upvote' article}}>
                         {{paper-icon icon="arrow-drop-up" size=2}}</span>
                     <span class="vote-count">
@@ -14,13 +14,11 @@
                             0
                         {{/if}}
                     </span>
-                {{/paper-tile-left}}
-                {{#paper-tile-content}}
                     <a class="article-link" href={{unbound article.url}}>{{article.title}}</a>
-                    <div>
+                    <p>
                         submitted by {{article.user.email}}
-                    </div>
-                {{/paper-tile-content}}
+                    </p>
+              </div>
             {{/paper-item}}
         {{/each}}
     {{/paper-list}}
