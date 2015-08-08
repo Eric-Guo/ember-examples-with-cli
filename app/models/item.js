@@ -5,6 +5,7 @@ import momentDuration from 'ember-moment/computeds/duration';
 
 export default DS.Model.extend({
   workitem: DS.attr('string'),
+  user: DS.belongsTo('user', {async: true}),
   start: DS.attr('date'),
   startSince: momentFromNow('start'),
   end: DS.attr('date'),
