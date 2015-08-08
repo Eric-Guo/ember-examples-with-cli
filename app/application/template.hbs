@@ -1,9 +1,10 @@
 {{!-- ember-cli-materialize modal container --}}
 {{md-modal-container}}
-{{#md-navbar name='MES Time Sheets' class='brand-logo' homeRoute='index'}}
-  {{#link-to 'protected' tagName='li'}}
-    {{link-to 'Protected' 'protected'}}
+{{#md-navbar name='Time Sheets' class='brand-logo' homeRoute='index'}}
+  {{#link-to 'new' tagName='li'}}
+    {{link-to 'New' 'new' class="btn-large lime"}}
   {{/link-to}}
+  &nbsp;&nbsp;
 {{#if session.isAuthenticated}}
   {{md-btn text=session.content.secure.email action='invalidateSession' class="btn"}}
 {{else}}
