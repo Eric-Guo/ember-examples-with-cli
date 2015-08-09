@@ -3,18 +3,30 @@ import AuthenticatedRouteMixin from 'simple-auth/mixins/authenticated-route-mixi
 
 export default Ember.Route.extend(AuthenticatedRouteMixin, {
   model() {
-    var item;
-    item = this.store.createRecord('item');
-    this.store.findRecord('user', this.get('session').content.secure.user_id).then((u) =>  {
-      item.set('user', u);
-    });
-    return item;
+    return {
+      workitem: '',
+      start: new Date(new Date() - 60*60*1000),
+      end: new Date(),
+      ticketnumber: '',
+      category: ''
+    };
   },
   actions: {
-      create: function() {
-        this.controller.get('model').save().then(() => {
-          this.transitionToRoute('items');
-        });
-      }
+    create: function() {
+      var self = this;
+      var model = this.modelFor('new');
+      var item = this.store.createRecord('item', {
+        workitem: model.workitem,
+        start: model.start,
+        end: model.end,
+        ticketnumber: model.ticketnumber,
+        category: model.category
+      });
+      this.store.findRecord('user', this.get('session').content.secure.user_id).then((u) =>  {
+        item.set('user', u);
+        item.save();
+        self.transitionTo('index');
+      });
+    }
   }
 });

@@ -6,7 +6,9 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('new');
+  this.route('index', {path: '/'}, function() {
+    this.route('new', { resetNamespace: true });
+  });
   this.route('login');
 });
 

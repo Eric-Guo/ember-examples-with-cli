@@ -1,10 +1,26 @@
 <div class="row">
-  <form class="col s6">
-{{md-input value=model.workitem label='Work Item'}}
-{{md-input value=model.start label='Start At'}}
-{{md-input value=model.end label='Finish At'}}
-{{md-input value=model.ticketnumber label='Ticket#'}}
-{{md-input value=model.category label='Category'}}
-{{md-btn-submit action='create' icon='mdi-content-send' iconPosition='right' text='Create'}}
+  <form class="col s12">
+    <div class="row">
+      <div class="input-field col s6">
+        {{md-input value=model.workitem label='Work Item'}}
+      </div>
+      <div class="input-field col s3">
+        {{md-input value=model.ticketnumber label='Ticket#'}}
+      </div>
+      <div class="input-field col s3">
+        {{md-input value=model.category label='Category'}}
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s5">
+        {{md-input value=model.start label='Start At'}}
+      </div>
+      <div class="input-field col s5">
+        {{md-input value=model.end label='Finish At'}}
+      </div>
+      <div class="input-field col s2">
+        {{md-btn-submit action='create' icon='mdi-content-add-circle' iconPosition='left' text='New'}}
+      </div>
+    </div>
   </form>
 </div>

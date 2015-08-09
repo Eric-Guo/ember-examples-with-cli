@@ -1,3 +1,5 @@
+{{outlet}}
+
 {{#md-table content=model class='bordered' as |item|}}
 {{#if item.user.isFulfilled}}
   {{md-table-col row=item valueBindingPath='workitem' header='Work Item'}}
