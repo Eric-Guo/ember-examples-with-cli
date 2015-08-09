@@ -13,7 +13,8 @@ module.exports = function(environment) {
       }
     },
     contentSecurityPolicy: {
-      'style-src': "'self' 'unsafe-inline'"
+      'style-src': "'self' 'unsafe-inline'",
+      'connect-src': "'self' http://localhost:3000"
     },
     'simple-auth': {
       authorizer: 'simple-auth-authorizer:devise'
