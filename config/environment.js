@@ -12,6 +12,12 @@ module.exports = function(environment) {
         // e.g. 'with-controller': true
       }
     },
+    contentSecurityPolicy: {
+      'style-src': "'self' 'unsafe-inline'"
+    },
+    'simple-auth': {
+      authorizer: 'simple-auth-authorizer:devise'
+    },
     'simple-auth-devise': {
       resourceName: 'user',
       identificationAttributeName: 'email'
