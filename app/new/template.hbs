@@ -1,1 +1,10 @@
-this is a protected page
+<div class="row">
+  <form class="col s6">
+{{md-input value=model.workitem label='Work Item'}}
+{{md-input value=model.start label='Start At'}}
+{{md-input value=model.end label='Finish At'}}
+{{md-input value=model.ticketnumber label='Ticket#'}}
+{{md-input value=model.category label='Category'}}
+{{md-btn-submit action='create' icon='mdi-content-send' iconPosition='right' text='Create'}}
+  </form>
+</div>
