@@ -14,7 +14,7 @@
   },
   "repository": "https://github.com/Eric-Guo/ember-examples-with-cli",
   "engines": {
-    "node": ">= 0.10.0"
+    "node": ">= 0.12.0"
   },
   "author": "",
   "license": "MIT",
