@@ -2,6 +2,11 @@
 
 {{#md-table content=model class='bordered' as |item|}}
 {{#if item.user.isFulfilled}}
+  {{#md-table-col row=item key='id' header='Action'}}
+    <button type="button" {{action "remove" item}}>
+      <i class="mdi-content-remove-circle"></i>
+    </button>
+  {{/md-table-col}}
   {{md-table-col row=item valueBindingPath='workitem' header='Work Item'}}
   {{md-table-col row=item valueBindingPath='user.email' header='By'}}
   {{md-table-col row=item valueBindingPath='startSince' header='Start at'}}
