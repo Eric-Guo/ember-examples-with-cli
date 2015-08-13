@@ -17,9 +17,11 @@
 {{#each model as |item|}}
   <tr>
     <td>
+  {{#if item.canRemove}}
       <button type="button" {{action "remove" item}}>
         <i class="mdi-content-remove-circle"></i>
       </button>
+  {{/if}}
     </td>
     <td>{{item.workitem}}</td>
     <td>{{item.user.email}}</td>
