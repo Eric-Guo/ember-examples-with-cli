@@ -1,18 +1,34 @@
 {{outlet}}
 
-{{#md-table content=model class='bordered' as |item|}}
-{{#if item.user.isFulfilled}}
-  {{#md-table-col row=item key='id' header='Action'}}
-    <button type="button" {{action "remove" item}}>
-      <i class="mdi-content-remove-circle"></i>
-    </button>
-  {{/md-table-col}}
-  {{md-table-col row=item valueBindingPath='workitem' header='Work Item'}}
-  {{md-table-col row=item valueBindingPath='user.email' header='By'}}
-  {{md-table-col row=item valueBindingPath='startSince' header='Start at'}}
-  {{md-table-col row=item valueBindingPath='endSince' header='Finish at'}}
-  {{md-table-col row=item valueBindingPath='durationMoment' header='Duration'}}
-  {{md-table-col row=item valueBindingPath='ticketnumber' header='Ticket#'}}
-  {{md-table-col row=item valueBindingPath='category' header='Belong category'}}
-{{/if}}
-{{/md-table}}
+<table class="bordered ember-view">
+<thead>
+  <tr>
+      <th>Action</th>
+      <th>Work Item</th>
+      <th>By</th>
+      <th>Start at</th>
+      <th>Finish at</th>
+      <th>Duration</th>
+      <th>Ticket#</th>
+      <th>Belong category</th>
+  </tr>
+</thead>
+<tbody>
+{{#each model as |item|}}
+  <tr>
+    <td>
+      <button type="button" {{action "remove" item}}>
+        <i class="mdi-content-remove-circle"></i>
+      </button>
+    </td>
+    <td>{{item.workitem}}</td>
+    <td>{{item.user.email}}</td>
+    <td>{{item.startSince}}</td>
+    <td>{{item.endSince}}</td>
+    <td>{{item.durationMoment}}</td>
+    <td>{{item.ticketnumber}}</td>
+    <td>{{item.category}}</td>
+  </tr>
+{{/each}}
+</tbody>
+</table>
