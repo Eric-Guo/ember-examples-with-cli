@@ -22,6 +22,8 @@ export default Ember.Component.extend({
     },
     save: function(item) {
       let self = this;
+      item.set('start', new Date(item.get('start')));
+      item.set('end', new Date(item.get('end')));
       item.save().then(function() {
         self.set('isEditing', false);
       });
