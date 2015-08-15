@@ -1,14 +1,36 @@
+<td>{{itemEmail}}</td>
 <td>
 {{#if canRemove}}
   <button type="button" {{action "remove" item}}>
     <i class="mdi-content-remove-circle"></i>
   </button>
 {{/if}}
+{{#if canEdit}}
+  {{#if isEditing}}
+    <button type="button" {{action "save" item}}>
+      <i class="mdi-editor-publish"></i>
+    </button>
+  {{else}}
+    <button type="button" {{action "edit"}}>
+      <i class="mdi-editor-mode-edit"></i>
+    </button>
+  {{/if}}
+{{/if}}
 </td>
-<td>{{item.workitem}}</td>
-<td>{{itemEmail}}</td>
-<td>{{item.startSince}}</td>
-<td>{{item.endSince}}</td>
+{{#if isEditing}}
+  <td>{{md-input value=item.workitem label='Work Item'}}</td>
+  <td>{{md-input value=item.start label='Start At'}}</td>
+  <td>{{md-input value=item.end label='Finish At'}}</td>
+{{else}}
+  <td>{{item.workitem}}</td>
+  <td>{{item.startSince}}</td>
+  <td>{{item.endSince}}</td>
+{{/if}}
 <td>{{item.durationMoment}}</td>
-<td>{{item.ticketnumber}}</td>
-<td>{{item.category}}</td>
+{{#if isEditing}}
+  <td>{{md-input value=item.ticketnumber label='Ticket#'}}</td>
+  <td>{{md-input value=item.category label='Category'}}</td>
+{{else}}
+  <td>{{item.ticketnumber}}</td>
+  <td>{{item.category}}</td>
+{{/if}}

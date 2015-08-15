@@ -10,7 +10,22 @@ export default Ember.Component.extend({
       return (this.get('itemEmail') === this.get('sessionEmail'));
     }
   }),
+  canEdit: Ember.computed('itemEmail', 'sessionEmail', {
+    get() {
+      return (this.get('itemEmail') === this.get('sessionEmail'));
+    }
+  }),
+  isEditing: false,
   actions: {
+    edit: function() {
+      this.set('isEditing', true);
+    },
+    save: function(item) {
+      let self = this;
+      item.save().then(function() {
+        self.set('isEditing', false);
+      });
+    },
     remove: function(item) {
       item.destroyRecord();
     }
