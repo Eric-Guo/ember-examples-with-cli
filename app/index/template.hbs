@@ -15,22 +15,16 @@
 </thead>
 <tbody>
 {{#each model as |item|}}
-  <tr>
-    <td>
-  {{#if item.canRemove}}
-      <button type="button" {{action "remove" item}}>
-        <i class="mdi-content-remove-circle"></i>
-      </button>
-  {{/if}}
-    </td>
-    <td>{{item.workitem}}</td>
-    <td>{{item.user.email}}</td>
-    <td>{{item.startSince}}</td>
-    <td>{{item.endSince}}</td>
-    <td>{{item.durationMoment}}</td>
-    <td>{{item.ticketnumber}}</td>
-    <td>{{item.category}}</td>
-  </tr>
+  {{item-row
+    sessionEmail=session.content.secure.email
+    workitem=item.workitem
+    email=item.user.email
+    startSince=item.startSince
+    endSince=item.endSince
+    durationMoment=item.durationMoment
+    ticketnumber=item.ticketnumber
+    category=item.category
+  }}
 {{/each}}
 </tbody>
 </table>
