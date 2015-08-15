@@ -3,16 +3,16 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   tagName: 'tr',
   sessionEmail: null, // passed-in
-  workitem: null, // passed-in
-  email: null, // passed-in
-  startSince: null,   // passed-in,
-  endSince: null,   // passed-in,
-  durationMoment: null,   // passed-in,
-  ticketnumber: null,   // passed-in,
-  category: null,   // passed-in,
-  canRemove: Ember.computed('email', 'sessionEmail', {
+  item: null, // passed-in
+  itemEmail: null, // passed-in
+  canRemove: Ember.computed('itemEmail', 'sessionEmail', {
     get() {
-      return (this.get('email') === this.get('sessionEmail'));
+      return (this.get('itemEmail') === this.get('sessionEmail'));
     }
-  })
+  }),
+  actions: {
+    remove: function(item) {
+      item.destroyRecord();
+    }
+  }
 });

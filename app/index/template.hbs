@@ -17,13 +17,8 @@
 {{#each model as |item|}}
   {{item-row
     sessionEmail=session.content.secure.email
-    workitem=item.workitem
-    email=item.user.email
-    startSince=item.startSince
-    endSince=item.endSince
-    durationMoment=item.durationMoment
-    ticketnumber=item.ticketnumber
-    category=item.category
+    item=item
+    itemEmail=item.user.email
   }}
 {{/each}}
 </tbody>
