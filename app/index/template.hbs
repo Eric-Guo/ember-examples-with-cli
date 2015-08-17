@@ -1,5 +1,26 @@
 {{outlet}}
 
+<div class="row">
+  <div class="col s5 offset-s1">
+    <table>
+      <thead>
+        <tr>
+          <th>Users</th>
+          <th>Today items</th>
+          <th>Total items</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{session.content.secure.email}}</td>
+          <td>{{myTodayItemsCount}}</td>
+          <td>{{myItemsCount}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
 <table class="bordered ember-view">
 <thead>
   <tr>
