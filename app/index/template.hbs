@@ -2,26 +2,10 @@
 
 {{#if showStatus}}
 <div class="row">
-  <div class="col s5 offset-s1">
-    <table>
-      <thead>
-        <tr>
-          <th>Users</th>
-          <th>Today items</th>
-          <th>Spent</th>
-          <th>Total items</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>{{session.content.secure.email}}</td>
-          <td>{{myTodayItemsCount}}</td>
-          <td>{{moment-duration myTodayItemsDuration}}</td>
-          <td>{{myItemsCount}}</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+  <div class="col s4 offset-s1 lime lighten-2">Users: {{session.content.secure.email}}</div>
+  <div class="col s2 lime lighten-3">Today finish {{myTodayItemsCount}} items</div>
+  <div class="col s2 lime lighten-4">Spent on {{moment-duration myTodayItemsDuration}}</div>
+  <div class="col s2 lime lighten-5">Total items: {{myItemsCount}}</div>
 </div>
 {{/if}}
 
