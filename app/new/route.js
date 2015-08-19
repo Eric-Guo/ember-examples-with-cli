@@ -11,6 +11,17 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
       category: ''
     };
   },
+  setupController: function (controller, model) {
+    // Call _super for default behavior
+    this._super(controller, model);
+    // Implement your custom setup after
+    this.controllerFor('index').set('showStatus', false);
+  },
+  resetController: function (controller, isExiting) {
+    if (isExiting) {
+      this.controllerFor('index').set('showStatus', true);
+    }
+  },
   actions: {
     create: function() {
       var self = this;

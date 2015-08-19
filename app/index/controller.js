@@ -17,5 +17,6 @@ export default Ember.Controller.extend({
   }),
   myTodayItemsCount: Ember.computed('myItems', function() {
     return this.get('myTodayItems').get('length');
-  })
+  }),
+  showStatus: true
 });
