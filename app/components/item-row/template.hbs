@@ -23,10 +23,10 @@
   <td>{{md-input value=item.end label='Finish At'}}</td>
 {{else}}
   <td>{{item.workitem}}</td>
-  <td>{{item.startSince}}</td>
-  <td>{{item.endSince}}</td>
+  <td>{{moment-from-now item.start}}</td>
+  <td>{{moment-from-now item.end}}</td>
 {{/if}}
-<td>{{item.durationMoment}}</td>
+<td>{{moment-duration item.duration}}</td>
 {{#if isEditing}}
   <td>{{md-input value=item.ticketnumber label='Ticket#'}}</td>
   <td>{{md-input value=item.category label='Category'}}</td>
