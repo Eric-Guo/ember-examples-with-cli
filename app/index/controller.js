@@ -4,7 +4,7 @@ export default Ember.Controller.extend({
   myItems: Ember.computed('model.@each.user','model.@each.start','model.@each.end', function() {
     let model = this.get('model');
     let session = this.get('session');
-    return model.filterBy('user.email', session.content.secure.email);
+    return model.filterBy('user.badge', session.content.secure.badge);
   }),
   myItemsCount: Ember.computed('myItems', function() {
     return this.get('myItems').get('length');

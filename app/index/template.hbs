@@ -2,7 +2,7 @@
 
 {{#if showStatus}}
 <div class="row">
-  <div class="col s4 offset-s1 lime lighten-2">Users: {{session.content.secure.email}}</div>
+  <div class="col s2 offset-s2 lime lighten-2">Users: {{session.content.secure.badge}}</div>
   <div class="col s2 lime lighten-3">Today finish {{myTodayItemsCount}} items</div>
   <div class="col s2 lime lighten-4">Spent on {{moment-duration myTodayItemsDuration}}</div>
   <div class="col s2 lime lighten-5">Total items: {{myItemsCount}}</div>
@@ -25,9 +25,9 @@
 <tbody>
 {{#each model as |item|}}
   {{item-row
-    sessionEmail=session.content.secure.email
+    sessionEmail=session.content.secure.badge
     item=item
-    itemEmail=item.user.email
+    itemEmail=item.user.badge
   }}
 {{/each}}
 </tbody>

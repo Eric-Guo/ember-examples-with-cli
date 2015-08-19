@@ -21,7 +21,7 @@ module.exports = function(environment) {
     },
     'simple-auth-devise': {
       resourceName: 'user',
-      identificationAttributeName: 'email'
+      identificationAttributeName: 'badge'
     },
     APP: {
       // Here you can pass flags/options to your application instance
