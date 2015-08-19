@@ -8,6 +8,7 @@
         <tr>
           <th>Users</th>
           <th>Today items</th>
+          <th>Spent</th>
           <th>Total items</th>
         </tr>
       </thead>
@@ -15,6 +16,7 @@
         <tr>
           <td>{{session.content.secure.email}}</td>
           <td>{{myTodayItemsCount}}</td>
+          <td>{{moment-duration myTodayItemsDuration}}</td>
           <td>{{myItemsCount}}</td>
         </tr>
       </tbody>

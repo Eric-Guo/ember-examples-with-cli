@@ -18,5 +18,7 @@ export default Ember.Controller.extend({
   myTodayItemsCount: Ember.computed('myItems', function() {
     return this.get('myTodayItems').get('length');
   }),
+  myTodayItemsTimeSpans: Ember.computed.mapBy('myTodayItems', 'duration'),
+  myTodayItemsDuration: Ember.computed.sum('myTodayItemsTimeSpans'),
   showStatus: true
 });
