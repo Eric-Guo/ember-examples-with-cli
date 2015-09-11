@@ -1,14 +1,13 @@
 {
   "name": "ember-web-with-cli",
   "dependencies": {
-    "ember": "1.13.9",
-    "ember-cli-shims": "ember-cli/ember-cli-shims#0.0.4",
-    "ember-cli-test-loader": "ember-cli-test-loader#0.2.0",
-    "ember-data": "1.13.11",
-    "ember-load-initializers": "ember-cli/ember-load-initializers#0.1.6",
+    "ember": "1.13.10",
+    "ember-cli-shims": "ember-cli/ember-cli-shims#0.0.5",
+    "ember-cli-test-loader": "ember-cli/ember-cli-test-loader#0.2.1",
+    "ember-data": "1.13.12",
+    "ember-load-initializers": "ember-cli/ember-load-initializers#0.1.7",
     "ember-qunit": "0.4.10",
     "ember-qunit-notifications": "0.0.7",
-    "ember-resolver": "~0.1.19",
     "jquery": "^1.11.3",
     "loader.js": "ember-cli/loader.js#3.3.0",
     "qunit": "~1.18.0"
