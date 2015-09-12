@@ -17,6 +17,7 @@
     "showdown": "~1.2.3",
     "showdown-github": "~1.0.0",
     "selectize": "~0.12.1",
-    "sifter": "~0.4.3"
+    "sifter": "~0.4.3",
+    "font-awesome": "^4.4.0"
   }
 }
