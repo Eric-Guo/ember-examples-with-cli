@@ -10,6 +10,11 @@
     "ember-qunit-notifications": "0.0.7",
     "jquery": "^1.11.3",
     "loader.js": "ember-cli/loader.js#3.3.0",
-    "qunit": "~1.18.0"
+    "qunit": "~1.18.0",
+    "materialize": "~0.97.0",
+    "pretender": "^0.10.0"
+  },
+  "resolutions": {
+    "jquery": "^1.11.3"
   }
 }

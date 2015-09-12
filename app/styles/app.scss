@@ -1,0 +1,56 @@
+@import 'materialize-variables';
+
+body {
+  background-color: $my-background;
+}
+
+header, main, footer {
+  padding-left: 250px;
+}
+
+@media only screen and (max-width : 992px) {
+  header, main, footer {
+    padding-left: 0;
+  }
+}
+
+.nav-bar {
+  nav {
+    z-index: 1000;
+    .nav-wrapper {
+      .button-collapse {
+        margin-left: 20px;
+      }
+    }
+  }
+  .brand-logo {
+    padding-left: 20px;
+    max-width: 80%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+  }
+  .side-nav {
+    li:first-child {
+      margin-top: 70px;
+    }
+  }
+}
+
+
+.text-right {
+  text-align: right;
+}
+
+.thin-inputs {
+  .red-text {
+    display: none;
+  }
+}
+
+table tfoot {
+  border-top: 1px grey solid;
+  td {
+    font-weight: bold;
+  }
+}

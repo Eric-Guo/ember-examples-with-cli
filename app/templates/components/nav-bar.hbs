@@ -1,0 +1,12 @@
+<nav>
+  <div class="nav-wrapper">
+    <div class="container-fluid">
+      {{link-to 'WGE - Composability' 'index' class='brand-logo hide-on-large-only'}}
+      {{link-to 'Wicked Good Ember - Composability' 'index' class='brand-logo hide-on-med-and-down'}}
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+    </div>
+  </div>
+</nav>
+<ul class="side-nav fixed" id="mobile-demo">
+  {{yield}}
+</ul>

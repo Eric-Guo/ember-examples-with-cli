@@ -1,0 +1,72 @@
+<div class="row">
+  <div class="col s12  thin-inputs">
+    {{#md-card-collapsible accordion=false class="configure-collapsible"}}
+      {{#md-collapsible icon="mdi-action-settings" title="Configuration"}}
+        <div class="row">
+          <div class="col s4">
+          {{md-input type="number" label="Tax (%)" value=taxPercent class="tax-field"}}</div>
+          <div class="col s4">
+          {{md-input type="number" label="Tip (%)" value=tipPercent class="tip-field"}}</div>
+          <div class="col s4">
+          {{md-input type="number" label="Discount ($)" value=discount class="discount-field"}}</div>
+        </div>
+      {{/md-collapsible}}
+    {{/md-card-collapsible}}
+  </div>
+</div>
+
+<div class="row">
+  <div class="col m8 s12">
+    {{#md-card title="Menu"}}
+      {{#md-card-content}}
+        <table>
+          {{#each content as |menuItem|}}
+          <tr data-item-name={{menuItem.name}}>
+            <td width=100>
+              <button class="btn btn-flat" {{action 'addMenuItem' menuItem}}>Add</button>
+            </td>
+            <td>{{menuItem.name}}</td>
+            <td width=150 class="text-right">{{nice-currency menuItem.price}}</td>
+          </tr>
+          {{/each}}
+        </table>
+      {{/md-card-content}}
+    {{/md-card}}
+  </div>
+  <div class="col m4 s12">
+    {{#md-card title="Order"}}
+      {{#md-card-content}}
+        <table data-autoid="order-table">
+          {{#each order as |orderItem|}}
+            <tr>
+              <td width=100>
+                <button class="btn btn-flat" {{action 'removeOrderItem' orderItem}}>&times;</button>
+              </td>
+              <td>{{orderItem.name}}</td>
+              <td width=150 class="text-right">{{nice-currency orderItem.price}}</td>
+            </tr>
+          {{/each}}
+          <tfoot>
+            <tr>
+              <td colspan=2 class="text-right">Subtotal</td>
+              <td class="text-right" data-autoid='subtotal-amount'>{{nice-currency subtotal}}</td>
+            </tr>
+            <tr>
+              <td colspan=2 class="text-right">Tip</td>
+              <td class="text-right" data-autoid='tip-amount'>{{nice-currency tipAmount}}</td>
+            </tr>
+            <tr>
+              <td colspan=2 class="text-right">Tax</td>
+              <td class="text-right" data-autoid='tax-amount'>{{nice-currency taxAmount}}</td>
+            </tr>
+            <tr>
+              <td colspan=2 class="text-right">Grand Total</td>
+              <td class="text-right" data-autoid='total-amount'>{{nice-currency totalAmount}}</td>
+            </tr>
+          </tfoot>
+        </table>
+      {{/md-card-content}}
+    {{/md-card}}
+  </div>
+</div>
+{{code-snippet name=codeExample}}

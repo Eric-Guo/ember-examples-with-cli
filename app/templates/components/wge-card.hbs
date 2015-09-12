@@ -1,0 +1,15 @@
+<div class="card-content white-text">
+  <div class="card-title">{{title}}</div>
+  {{yield}}
+</div>
+
+{{#if _cardActions.length}}
+  <div class="card-action">
+    {{#each _cardActions as |cardAction|}}
+      {{view Ember.View
+        tagName='a'
+        template=cardAction.template
+        controller=parentController}}
+    {{/each}}
+  </div>
+{{/if}}
